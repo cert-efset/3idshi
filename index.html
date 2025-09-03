@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EF SET Certificate</title>
   <style>
     body {
@@ -50,10 +50,19 @@
       background: #000;
       opacity: 0.5;
     }
-    .name-line p {
-      font-size: 28px;
+    .name-line h1 {
+      font-size: 40px; /* increased font size */
       font-weight: bold;
       margin: 0;
+    }
+    p.text-text-dark {
+      color: #1f2937; /* dark text */
+      font-weight: 500;
+      margin-bottom: 40px; /* corresponds to mb-10 */
+      font-size: 16px; /* base size */
+      max-width: 370px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .badge-container {
       position: relative;
@@ -91,7 +100,6 @@
       justify-content: center;
       gap: 90px;
       margin-bottom: 20px;
-      
     }
     .skill-item {
       display: flex;
@@ -131,8 +139,7 @@
       text-align: center;
       margin-bottom: 30px;
       min-height: 1200px;
-       /* make it positioned for z-index */
-  z-index: -1;
+      z-index: -1;
     }
     .results-section h2 {
       font-size: 22px;
@@ -164,38 +171,36 @@
       color: #333;
     }
     .white-section {
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: -950px;       /* keeps it overlapping the blue section */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  height: 320px;
-
-  width: 80%;               /* reduce width */
-  max-width: 700px;         /* optional: cap width */
-  margin-left: auto;        /* center horizontally */
-  margin-right: auto;       /* center horizontally */
-  text-align: left;
-  position: relative;       /* if you need z-index */
-  z-index: 2;
-}
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: -950px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      height: 320px;
+      width: 80%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+    }
     .white-section1 {
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 30px;       /* keeps it overlapping the blue section */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  height: 350px;
-
-  width: 80%;               /* reduce width */
-  max-width: 700px;         /* optional: cap width */
-  margin-left: auto;        /* center horizontally */
-  margin-right: auto;       /* center horizontally */
-  text-align: left;
-  position: relative;       /* if you need z-index */
-  z-index: 2;
-}
-.white-section1 svg {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      height: 350px;
+      width: 80%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+    }
+    .white-section1 svg {
       margin-right: 20px;
     }
     .white-section1 h3 {
@@ -279,13 +284,16 @@
       font-weight: 500;
       gap: 10px;
     }
+    .buttons a svg {
+      fill: #0A66C2;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <!-- Logo -->
     <div class="logo">
-      <img src="https://cert.efset.org/_next/static/media/logo.06bf8183.svg" alt="logo">
+      <img src="https://cert.efset.org/_next/static/media/logo.06bf8183.svg" alt="logo" />
     </div>
 
     <!-- Title -->
@@ -296,15 +304,20 @@
     <!-- Name with lines -->
     <div class="name-line">
       <span></span>
-      <p>Usman Hafeez</p>
+      <h1>Usman Hafeez</h1>
       <span></span>
     </div>
 
+    <!-- New paragraph below the name line -->
+    <p class="text-text-dark font-medium mb-10 text-base max-w-[370px] mx-auto">
+      has successfully completed the EF SET Certificate and has earned level:
+    </p>
+
     <!-- Badge -->
     <div class="badge-container">
-      <img src="https://cdn.efset.org/efset-widget/img/v2/social-media/certificate/cefr-badge-C2.svg" alt="badge">
+      <img src="https://cdn.efset.org/efset-widget/img/v2/social-media/certificate/cefr-badge-C2.svg" alt="badge" />
       <div class="badge-overlay">
-        <img src="https://a.storyblok.com/f/246158/103x24/eb1cf2418f/efset-logo_white.svg" alt="white logo">
+        <img src="https://a.storyblok.com/f/246158/103x24/eb1cf2418f/efset-logo_white.svg" alt="white logo" />
         <p>75/100</p>
         <p>C2 Proficient</p>
       </div>
@@ -346,30 +359,58 @@
           </tr>
           <tr>
             <td style="font-weight:bold;">CEFR</td>
-            <td>A0<br><small>Novice</small></td>
-            <td>A1<br><small>Beginner</small></td>
-            <td>A2<br><small>Elementary</small></td>
-            <td>B1<br><small>Intermediate</small></td>
-            <td>B2<br><small>Upper Intermediate</small></td>
-            <td>C1<br><small>Advanced</small></td>
-            <td class="highlight">C2<br><small>Proficient</small></td>
+            <td>A0<br /><small>Novice</small></td>
+            <td>A1<br /><small>Beginner</small></td>
+            <td>A2<br /><small>Elementary</small></td>
+            <td>B1<br /><small>Intermediate</small></td>
+            <td>B2<br /><small>Upper Intermediate</small></td>
+            <td>C1<br /><small>Advanced</small></td>
+            <td class="highlight">C2<br /><small>Proficient</small></td>
           </tr>
         </tbody>
       </table>
 
-      <p>The achieved level is <strong>75/100</strong> on the EF SET score scale and <strong>C2 Proficient</strong> according to the Common European Framework of Reference (CEFR). 
-        The EF SET score is calculated as an <br>average of the skill 
-        section scores.</p>
+      <p>
+        The achieved level is <strong>75/100</strong> on the EF SET score scale and
+        <strong>C2 Proficient</strong> according to the Common European Framework of Reference (CEFR).
+        The EF SET score is calculated as an <br />average of the skill
+        section scores.
+      </p>
     </div>
 
     <!-- Reading Section -->
-    <div class="white-section" >
+    <div class="white-section">
       <div style="display:flex; align-items:center;">
         <svg width="90" height="90">
-          <circle cx="45" cy="45" r="41" stroke="#eee" stroke-width="4" fill="transparent"></circle>
-          <circle cx="45" cy="45" r="41" stroke="#6b46c1" stroke-width="4" fill="transparent"
-            stroke-dasharray="257.610" stroke-dashoffset="69.475" stroke-linecap="round" transform="rotate(-90 45 45)"></circle>
-          <text x="50%" y="54%" text-anchor="middle" font-size="22" font-weight="bold" fill="#6b46c1">73</text>
+          <circle
+            cx="45"
+            cy="45"
+            r="41"
+            stroke="#eee"
+            stroke-width="4"
+            fill="transparent"
+          ></circle>
+          <circle
+            cx="45"
+            cy="45"
+            r="41"
+            stroke="#6b46c1"
+            stroke-width="4"
+            fill="transparent"
+            stroke-dasharray="257.610"
+            stroke-dashoffset="69.475"
+            stroke-linecap="round"
+            transform="rotate(-90 45 45)"
+          ></circle>
+          <text
+            x="50%"
+            y="54%"
+            text-anchor="middle"
+            font-size="22"
+            font-weight="bold"
+            fill="#6b46c1"
+            >73</text
+          >
         </svg>
         <div>
           <p style="font-weight:300; margin:0;">English</p>
@@ -377,11 +418,26 @@
           <p><strong>C2</strong> <span style="font-weight:300;">Proficient</span></p>
         </div>
       </div>
-      <p>You can read virtually any kind of text (factual, literary, technical) and accurately recognize and categorize style and tone. You can understand complex technical writing on unfamiliar subjects on a wide range of topics.</p>
+      <p>
+        You can read virtually any kind of text (factual, literary, technical) and
+        accurately recognize and categorize style and tone. You can understand
+        complex technical writing on unfamiliar subjects on a wide range of topics.
+      </p>
       <ul>
-        <li>Can read with ease virtually all forms of written language, including abstract, structurally or linguistically complex texts such as manuals, specialized articles and literary works</li>
-        <li>Can understand a wide range of long and complex texts, appreciating subtle distinctions of style, and implicit meaning</li>
-        <li>Can understand in detail complex texts likely to be encountered in social, professional or academic life, identifying finer points of detail including attitudes and implied opinions</li>
+        <li>
+          Can read with ease virtually all forms of written language, including
+          abstract, structurally or linguistically complex texts such as manuals,
+          specialized articles and literary works
+        </li>
+        <li>
+          Can understand a wide range of long and complex texts, appreciating
+          subtle distinctions of style, and implicit meaning
+        </li>
+        <li>
+          Can understand in detail complex texts likely to be encountered in
+          social, professional or academic life, identifying finer points of detail
+          including attitudes and implied opinions
+        </li>
       </ul>
     </div>
 
@@ -389,10 +445,35 @@
     <div class="white-section1">
       <div style="display:flex; align-items:center;">
         <svg width="90" height="90">
-          <circle cx="45" cy="45" r="41" stroke="#eee" stroke-width="4" fill="transparent"></circle>
-          <circle cx="45" cy="45" r="41" stroke="#6b46c1" stroke-width="4" fill="transparent"
-            stroke-dasharray="257.610" stroke-dashoffset="61.826" stroke-linecap="round" transform="rotate(-90 45 45)"></circle>
-          <text x="50%" y="54%" text-anchor="middle" font-size="22" font-weight="bold" fill="#6b46c1">76</text>
+          <circle
+            cx="45"
+            cy="45"
+            r="41"
+            stroke="#eee"
+            stroke-width="4"
+            fill="transparent"
+          ></circle>
+          <circle
+            cx="45"
+            cy="45"
+            r="41"
+            stroke="#6b46c1"
+            stroke-width="4"
+            fill="transparent"
+            stroke-dasharray="257.610"
+            stroke-dashoffset="61.826"
+            stroke-linecap="round"
+            transform="rotate(-90 45 45)"
+          ></circle>
+          <text
+            x="50%"
+            y="54%"
+            text-anchor="middle"
+            font-size="22"
+            font-weight="bold"
+            fill="#6b46c1"
+            >76</text
+          >
         </svg>
         <div>
           <p style="font-weight:300; margin:0;">English</p>
@@ -400,31 +481,60 @@
           <p><strong>C2</strong> <span style="font-weight:300;">Proficient</span></p>
         </div>
       </div>
-      <p>You are comfortable in all situations, live or broadcast, that require full comprehension; you are almost never confused or searching for the meaning of words and phrases. You understand nuances of expression and tone, humor and emphasis in all live theatrical presentations, films or broadcast presentations.</p>
+      <p>
+        You are comfortable in all situations, live or broadcast, that require full
+        comprehension; you are almost never confused or searching for the meaning of
+        words and phrases. You understand nuances of expression and tone, humor
+        and emphasis in all live theatrical presentations, films or broadcast
+        presentations.
+      </p>
       <ul>
-        <li>Can understand with ease any kind of spoken language, live or broadcast, even when delivered at fast native speed, provided with time to get familiar with any regional or other accent</li>
-        <li>Can understand lectures and presentations with a high degree of colloquialism, regional usage and unfamiliar terminology</li>
-        <li>Can follow complex interactions in group discussions and debates, even on abstract, complex and unfamiliar topics</li>
+        <li>
+          Can understand with ease any kind of spoken language, live or broadcast,
+          even when delivered at fast native speed, provided with time to get
+          familiar with any regional or other accent
+        </li>
+        <li>
+          Can understand lectures and presentations with a high degree of
+          colloquialism, regional usage and unfamiliar terminology
+        </li>
+        <li>
+          Can follow complex interactions in group discussions and debates, even
+          on abstract, complex and unfamiliar topics
+        </li>
       </ul>
     </div>
 
     <!-- About EF SET Section -->
     <div class="about-section">
       <h4><span></span>About EF SET<span></span></h4>
-      <p>The EF SET (<a href="https://www.efset.org" target="_blank" style="text-decoration:underline; color:#6b46c1;">www.efset.org</a>) is a suite of online certifying language exams for students and professionals. As part of EF Education First, we draw upon a 50-year legacy of academic excellence, having helped more than 20 million people across the world to successfully learn a language.</p>
-
-      <div class="buttons">
-        <a href="cert.pdf.pdf" target="_blank">Download PDF version</a>
-        <a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=EF%20SET%20English%20Certificate%2075%2F100%20(C2%20Proficient)&organizationId=13425355&issueYear=2020&issueMonth=12&certUrl=https%3A%2F%2Fcert.efset.org%2F2idfsh" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0A66C2" viewBox="0 0 19 19">
-            <path d="M4.88528 2.29843C4.88528 3.35533 4.1046 4.21209 2.8211 4.21209C1.61369 4.21044 0.833008 3.35533 0.833008 2.29843C0.833008 1.24153 1.6385 0.384766 2.87237 0.384766C4.10625 0.384766 4.86047 1.21507 4.88528 2.29843ZM0.933901 18.0295V5.72053H4.75957V18.0295H0.933901Z"></path>
-            <path d="M7.04864 9.64712C7.04864 8.11222 6.99902 6.82872 6.94775 5.72055H10.2706L10.4476 7.43243H10.5237C11.0265 6.62694 12.2604 5.44434 14.3245 5.44434C16.8419 5.44434 18.7291 7.1314 18.7291 10.7553V18.0295H14.9034V11.2085C14.9034 9.62231 14.3493 8.5406 12.965 8.5406C11.9081 8.5406 11.2795 9.27001 11.0017 9.97461C10.9008 10.226 10.876 10.5783 10.876 10.9306V18.0279H7.05029V9.64546L7.04864 9.64712Z"></path>
-          </svg>
-          Add to LinkedIn
-        </a>
-      </div>
+      <p>
+        The EF SET (
+        <a
+          href="https://www.efset.org"
+          target="_blank"
+          style="text-decoration:underline; color:#6b46c1;"
+          >www.efset.org</a
+        >
+        )
+        is a suite of online certifying language exams for students and
+        professionals. As part of EF Education First, we draw upon a 50-year legacy
+        of academic excellence, having helped more than 20 million people across
+        the world to successfully learn a language.
+      </p>
+ <!-- Buttons: Download PDF and LinkedIn side by side -->
+    <div class="buttons">
+      <a href="cert.pdf.pdf" target="_blank">Download PDF version</a>
+      <a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=EF%20SET%20English%20Certificate%2075%2F100%20(C2%20Proficient)&organizationId=13425355&issueYear=2020&issueMonth=12&certUrl=https%3A%2F%2Fcert.efset.org%2F2idfsh" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#0A66C2" viewBox="0 0 19 19">
+          <path d="M4.88528 2.29843C4.88528 3.35533 4.1046 4.21209 2.8211 4.21209C1.61369 4.21044 0.833008 3.35533 0.833008 2.29843C0.833008 1.24153 1.6385 0.384766 2.87237 0.384766C4.10625 0.384766 4.86047 1.21507 4.88528 2.29843ZM0.933901 18.0295V5.72053H4.75957V18.0295H0.933901Z"></path>
+          <path d="M7.04864 9.64712C7.04864 8.11222 6.99902 6.82872 6.94775 5.72055H10.2706L10.4476 7.43243H10.5237C11.0265 6.62694 12.2604 5.44434 14.3245 5.44434C16.8419 5.44434 18.7291 7.1314 18.7291 10.7553V18.0295H14.9034V11.2085C14.9034 9.62231 14.3493 8.5406 12.965 8.5406C11.9081 8.5406 11.2795 9.27001 11.0017 9.97461C10.9008 10.226 10.876 10.5783 10.876 10.9306V18.0279H7.05029V9.64546L7.04864 9.64712Z"></path>
+        </svg>
+        Add to LinkedIn
+      </a>
     </div>
-
+      
+    </div>
   </div>
 </body>
 </html>
